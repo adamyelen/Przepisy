@@ -81,7 +81,7 @@ elements.searchResPages.addEventListener('click', e => {
 
             // renderuję przepis
             clearLoader();
-            recipeView.rednerRecipe(state.recipe, state.likes.isLike(id));
+            recipeView.rednerRecipe(state.recipe, state.likes.isLiked(id));
         } catch (error) {
             alert('Błąd w pobieraniu przepisu')
         }
@@ -111,15 +111,15 @@ const controlList = () => {
 elements.shopping.addEventListener('click', e => {
     const id = e.target.closest('.shopping__item').dataset.itemid;
 
-    if (e.target.matches('.shopping__delete, shopping__delete *')) {
+    if (e.target.matches('.shopping__delete, .shopping__delete *')) {
         // kasuję ze stanu
         state.list.deleteItem(id);
 
         // kasuję z interfejsu
         listView.deleteItem(id);
     } else if (e.target.matches('.shopping__count-value')) {
-        const value = parseFloat(e.target.value, 10);
-        state.list.updateCount(id, val)
+        const val = parseFloat(e.target.value, 10);
+        state.list.updateCount(id, val);
     }
 });
 
@@ -133,7 +133,7 @@ const controlLike = () => {
     const currentID = state.recipe.id;
 
     // użytkownik ma już ulubiony przepisu
-    if (!state.likes.isLike()) {
+    if (!state.likes.isLiked(currentID)) {
         // dodaję polubienie do stanu
         const newLike = state.likes.addLike(currentID, state.recipe.title, state.recipe.author, state.recipe.img);
 
