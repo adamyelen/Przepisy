@@ -91,18 +91,18 @@ export const rednerRecipe = (recipe, isLiked) => {
                     <svg class="search__icon">
                         <use href="img/icons.svg#icon-shopping-cart"></use>
                     </svg>
-                    <span>Add to shopping list</span>
+                    <span>Dodaj do listy zakupów</span>
                 </button>
             </div>
 
             <div class="recipe__directions">
                 <h2 class="heading-2">How to cook it</h2>
                 <p class="recipe__directions-text">
-                    This recipe was carefully designed and tested by
-                    <span class="recipe__by">${recipe.author}</span>. Please check out directions at their website.
+                    Przepis został starannie przygotowany i sprawdzony przez
+                    <span class="recipe__by">${recipe.author}</span>. Sprawdź wskazówki na ich stronie.
                 </p>
                 <a class="btn-small recipe__btn" href="${recipe.url}" target="_blank">
-                    <span>Directions</span>
+                    <span>Wskazówki</span>
                     <svg class="search__icon">
                         <use href="img/icons.svg#icon-triangle-right"></use>
                     </svg>
