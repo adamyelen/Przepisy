@@ -8,7 +8,7 @@ App using API from [Food2Fork](https://www.food2fork.com/about/api). You can fin
 
 ### Technologies
 
-CSS, HTML, JavaScript.
+CSS, HTML, JavaScript, Webpack, Babel.
 
 To RUN the application use npm run start
 
