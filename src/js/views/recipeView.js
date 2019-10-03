@@ -96,7 +96,7 @@ export const rednerRecipe = (recipe, isLiked) => {
             </div>
 
             <div class="recipe__directions">
-                <h2 class="heading-2">How to cook it</h2>
+                <h2 class="heading-2">Jak to zrobić?</h2>
                 <p class="recipe__directions-text">
                     Przepis został starannie przygotowany i sprawdzony przez
                     <span class="recipe__by">${recipe.author}</span>. Sprawdź wskazówki na ich stronie.

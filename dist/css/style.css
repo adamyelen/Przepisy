@@ -42,7 +42,7 @@ body {
       border-radius: 0; } }
 
 .btn, .btn-small, .btn-small:link, .btn-small:visited {
-  background-image: linear-gradient(to right bottom, #051937, #361d49, #651a49, #f7971e, #9d3a17);
+  background-image: linear-gradient(to right bottom, #f7971e, #ffd200);
   border-radius: 10rem;
   border: none;
   text-transform: uppercase;
@@ -262,7 +262,7 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      background-image: linear-gradient(to right bottom, #051937, #361d49, #651a49, #f7971e, #9d3a17);
+      background-image: linear-gradient(to right bottom, #f7971e, #ffd200);
       opacity: .4; }
     .results__fig img,
     .likes__fig img {
@@ -340,7 +340,7 @@ body {
       -webkit-box-decoration-break: clone;
       box-decoration-break: clone;
       padding: 1.3rem 2rem;
-      background-image: linear-gradient(to right bottom, #051937, #361d49, #651a49, #f7971e, #9d3a17); }
+      background-image: linear-gradient(to right bottom, #f7971e, #ffd200); }
   .recipe__details {
     display: flex;
     align-items: center;
